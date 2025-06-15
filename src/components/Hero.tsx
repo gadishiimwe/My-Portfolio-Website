@@ -43,15 +43,15 @@ export const Hero = () => {
           
           {/* Social Links */}
           <div className="flex justify-center space-x-6 mb-12">
-            <a href="https://github.com" target="_blank" rel="noopener noreferrer" 
+            <a href="https://github.com/gadishiimwe" target="_blank" rel="noopener noreferrer" 
                className="p-3 bg-slate-800 rounded-full hover:bg-blue-600 transition-all duration-300 hover:scale-110 hover:shadow-lg hover:shadow-blue-500/25">
               <Github size={24} className="text-white" />
             </a>
-            <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer"
+            <a href="https://www.linkedin.com/in/gad-ishimwe/" target="_blank" rel="noopener noreferrer"
                className="p-3 bg-slate-800 rounded-full hover:bg-blue-600 transition-all duration-300 hover:scale-110 hover:shadow-lg hover:shadow-blue-500/25">
               <Linkedin size={24} className="text-white" />
             </a>
-            <a href="mailto:gad@example.com"
+            <a href="mailto:gadyishimwe1@gmail.com"
                className="p-3 bg-slate-800 rounded-full hover:bg-blue-600 transition-all duration-300 hover:scale-110 hover:shadow-lg hover:shadow-blue-500/25">
               <Mail size={24} className="text-white" />
             </a>

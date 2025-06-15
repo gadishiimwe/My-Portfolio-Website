@@ -1,4 +1,3 @@
-
 import { useState } from "react";
 import { Mail, Phone, MapPin, Send, Github, Linkedin, Twitter } from "lucide-react";
 import { useToast } from "@/hooks/use-toast";
@@ -33,14 +32,14 @@ export const Contact = () => {
     {
       icon: <Mail className="w-6 h-6" />,
       title: "Email",
-      value: "gad.ishimwe@example.com",
-      link: "mailto:gad.ishimwe@example.com"
+      value: "gadyishimwe1@gmail.com",
+      link: "mailto:gadyishimwe1@gmail.com"
     },
     {
       icon: <Phone className="w-6 h-6" />,
       title: "Phone",
-      value: "+250 788 123 456",
-      link: "tel:+250788123456"
+      value: "+250 781 166 081",
+      link: "tel:+250781166081"
     },
     {
       icon: <MapPin className="w-6 h-6" />,
@@ -51,8 +50,8 @@ export const Contact = () => {
   ];
 
   const socialLinks = [
-    { icon: <Github className="w-5 h-5" />, href: "https://github.com", label: "GitHub" },
-    { icon: <Linkedin className="w-5 h-5" />, href: "https://linkedin.com", label: "LinkedIn" },
+    { icon: <Github className="w-5 h-5" />, href: "https://github.com/gadishiimwe", label: "GitHub" },
+    { icon: <Linkedin className="w-5 h-5" />, href: "https://www.linkedin.com/in/gad-ishimwe/", label: "LinkedIn" },
     { icon: <Twitter className="w-5 h-5" />, href: "https://twitter.com", label: "Twitter" }
   ];
 
