@@ -28,8 +28,20 @@ export const Hero = () => {
         <div className="absolute inset-0 bg-gradient-to-r from-blue-500/20 to-purple-500/20 animate-pulse"></div>
       </div>
       
-      <div className="text-center z-10 px-4 max-w-4xl mx-auto">
+      <div className="text-center z-10 px-4 max-w-6xl mx-auto">
         <div className="animate-fade-in">
+          {/* Professional Photo */}
+          <div className="flex justify-center mb-8">
+            <div className="relative group">
+              <img 
+                src="/lovable-uploads/288eda16-60e8-41e0-9f00-37d178198211.png"
+                alt="GAD ISHIMWE - Full Stack Developer"
+                className="w-48 h-48 md:w-56 md:h-56 object-cover rounded-full border-4 border-blue-500/30 shadow-2xl group-hover:border-blue-500/60 transition-all duration-300 hover:scale-105"
+              />
+              <div className="absolute inset-0 rounded-full bg-gradient-to-t from-blue-500/20 to-purple-500/20 group-hover:from-blue-500/30 group-hover:to-purple-500/30 transition-all duration-300"></div>
+            </div>
+          </div>
+
           <h1 className="text-5xl md:text-7xl font-bold text-white mb-6">
             Hi, I'm <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-purple-500">GAD ISHIMWE</span>
           </h1>

@@ -45,12 +45,12 @@ export const Navigation = () => {
           
           {/* Desktop Navigation */}
           <div className="hidden md:block">
-            <div className="ml-10 flex items-baseline space-x-4">
+            <div className="ml-10 flex items-baseline space-x-8">
               {navItems.map((item) => (
                 <button
                   key={item.href}
                   onClick={() => scrollToSection(item.href)}
-                  className="text-gray-300 hover:text-blue-400 px-3 py-2 text-sm font-medium transition-colors duration-200 hover:scale-105"
+                  className="text-gray-300 hover:text-blue-400 px-4 py-2 text-sm font-medium transition-colors duration-200 hover:scale-105"
                 >
                   {item.label}
                 </button>
