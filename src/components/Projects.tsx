@@ -4,52 +4,52 @@ import { ExternalLink, Github } from "lucide-react";
 export const Projects = () => {
   const projects = [
     {
-      title: "E-Commerce Platform",
-      description: "Full-stack e-commerce solution with React, Node.js, and PostgreSQL. Features include user authentication, payment processing, and admin dashboard.",
-      image: "https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?w=500&h=300&fit=crop",
-      tags: ["React", "Node.js", "PostgreSQL", "Stripe"],
-      github: "https://github.com",
-      demo: "https://demo.com"
+      title: "Car Rental System",
+      description: "Full-stack car rental platform with booking management, user authentication, and payment processing. Built for Mufasa Business Group with modern UI and secure backend.",
+      image: "https://images.unsplash.com/photo-1449824913935-59a10b8d2000?w=500&h=300&fit=crop",
+      tags: ["React", "Node.js", "Express", "MySQL", "Authentication"],
+      github: "https://github.com/gadishiimwe/carrental",
+      demo: "#"
     },
     {
-      title: "Task Management App",
-      description: "Collaborative project management tool with real-time updates, drag-and-drop functionality, and team collaboration features.",
-      image: "https://images.unsplash.com/photo-1611224923853-80b023f02d71?w=500&h=300&fit=crop",
-      tags: ["Next.js", "Socket.io", "MongoDB", "Tailwind"],
-      github: "https://github.com",
-      demo: "https://demo.com"
+      title: "Student Management System",
+      description: "Comprehensive school management platform with student records, grade tracking, attendance management, and parent-teacher communication features.",
+      image: "https://images.unsplash.com/photo-1427504494785-3a9ca7044f45?w=500&h=300&fit=crop",
+      tags: ["React", "Express.js", "MySQL", "CRUD Operations"],
+      github: "https://github.com/gadishiimwe/student-management-system",
+      demo: "#"
     },
     {
-      title: "Analytics Dashboard",
-      description: "Real-time analytics dashboard with interactive charts, data visualization, and comprehensive reporting capabilities.",
-      image: "https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=500&h=300&fit=crop",
-      tags: ["Vue.js", "Python", "FastAPI", "Chart.js"],
-      github: "https://github.com",
-      demo: "https://demo.com"
+      title: "News Portal",
+      description: "Dynamic news website with content management system, article categorization, user comments, and admin dashboard for content moderation.",
+      image: "https://images.unsplash.com/photo-1504711434969-e33886168f5c?w=500&h=300&fit=crop",
+      tags: ["PHP", "Laravel", "MySQL", "CMS", "Admin Panel"],
+      github: "https://github.com/gadishiimwe/newsportal",
+      demo: "#"
     },
     {
-      title: "Social Media API",
-      description: "RESTful API for social media platform with authentication, post management, real-time messaging, and content moderation.",
-      image: "https://images.unsplash.com/photo-1611605698335-8b1569810432?w=500&h=300&fit=crop",
-      tags: ["Express.js", "JWT", "Redis", "Docker"],
-      github: "https://github.com",
-      demo: "https://demo.com"
+      title: "UNITED CHRISTIAN CHURCH Website",
+      description: "Church website with event management, sermon streaming, member portal, and donation system. Features responsive design and content management.",
+      image: "https://images.unsplash.com/photo-1438232992991-995b7058bbb3?w=500&h=300&fit=crop",
+      tags: ["WordPress", "PHP", "MySQL", "Custom Themes"],
+      github: "#",
+      demo: "#"
     },
     {
-      title: "Weather Forecast App",
-      description: "Beautiful weather application with location-based forecasts, interactive maps, and personalized weather alerts.",
-      image: "https://images.unsplash.com/photo-1504608524841-42fe6f032b4b?w=500&h=300&fit=crop",
-      tags: ["React Native", "TypeScript", "Weather API"],
-      github: "https://github.com",
-      demo: "https://demo.com"
+      title: "ECHOX - Super App",
+      description: "All-in-One digital platform combining multiple services in a single application. Features modern UI, user management, and integrated payment systems.",
+      image: "https://images.unsplash.com/photo-1551650975-87deedd944c3?w=500&h=300&fit=crop",
+      tags: ["React", "Node.js", "Multi-Service", "Payment Integration"],
+      github: "#",
+      demo: "#"
     },
     {
-      title: "Learning Management System",
-      description: "Comprehensive LMS with course management, progress tracking, video streaming, and interactive assignments.",
-      image: "https://images.unsplash.com/photo-1513475382585-d06e58bcb0e0?w=500&h=300&fit=crop",
-      tags: ["Django", "React", "AWS S3", "PostgreSQL"],
-      github: "https://github.com",
-      demo: "https://demo.com"
+      title: "Investment Solutions Platform",
+      description: "Financial platform for investment tracking, portfolio management, and market analysis with real-time data integration and secure transactions.",
+      image: "https://images.unsplash.com/photo-1559526324-4b87b5e36e44?w=500&h=300&fit=crop",
+      tags: ["React", "Express", "MySQL", "Financial APIs", "Charts"],
+      github: "#",
+      demo: "#"
     }
   ];
 
@@ -62,7 +62,7 @@ export const Projects = () => {
           </h2>
           <div className="w-24 h-1 bg-gradient-to-r from-blue-400 to-purple-500 mx-auto mb-8"></div>
           <p className="text-lg text-gray-400 max-w-2xl mx-auto">
-            A showcase of my recent work and the technologies I'm passionate about
+            Real-world applications solving business problems across various industries
           </p>
         </div>
 

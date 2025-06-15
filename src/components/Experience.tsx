@@ -4,51 +4,55 @@ import { Calendar, MapPin } from "lucide-react";
 export const Experience = () => {
   const experiences = [
     {
-      title: "Senior Fullstack Developer",
-      company: "Tech Innovations Inc.",
-      location: "Remote",
+      title: "Founder & Lead Developer",
+      company: "IntareTek",
+      location: "Rwanda",
+      period: "2023 - Present",
+      description: "Founded and leading a tech company focused on building digital solutions for businesses across Rwanda. Managing multiple client projects and developing innovative web applications.",
+      achievements: [
+        "Successfully delivered 10+ full-stack web applications",
+        "Built car rental, school management, and news portal systems",
+        "Established strong client relationships across various industries",
+        "Led development of AI-integrated projects and emerging tech solutions"
+      ]
+    },
+    {
+      title: "Full-Stack Developer",
+      company: "Freelance Projects",
+      location: "Rwanda",
       period: "2022 - Present",
-      description: "Leading development of scalable web applications using React, Node.js, and cloud technologies. Mentoring junior developers and architecting solutions for complex business requirements.",
+      description: "Developing custom web applications for clients including church websites, business management systems, and investment platforms using modern tech stack.",
       achievements: [
-        "Increased application performance by 40% through optimization",
-        "Led a team of 5 developers on multiple successful projects",
-        "Implemented CI/CD pipelines reducing deployment time by 60%"
+        "Delivered UNITED CHRISTIAN CHURCH website with full CMS",
+        "Built Mufasa Business Group car rental platform",
+        "Developed ECHOX super app with multiple integrated services",
+        "Implemented secure authentication and payment systems"
       ]
     },
     {
-      title: "Fullstack Developer",
-      company: "Digital Solutions Ltd.",
-      location: "Kigali, Rwanda",
-      period: "2020 - 2022",
-      description: "Developed and maintained multiple client projects using modern web technologies. Collaborated with designers and product managers to deliver high-quality user experiences.",
+      title: "Web Developer",
+      company: "Various Projects",
+      location: "Rwanda",
+      period: "2021 - 2022",
+      description: "Started professional journey building WordPress sites and learning modern web development. Gained expertise in CRUD operations, database management, and API development.",
       achievements: [
-        "Built 10+ responsive web applications from scratch",
-        "Reduced bug reports by 50% through comprehensive testing",
-        "Implemented automated deployment processes"
+        "Mastered WordPress development and custom themes",
+        "Learned MySQL database design and optimization",
+        "Built first full-stack applications with React and Node.js",
+        "Completed multiple certification programs in programming"
       ]
     },
     {
-      title: "Frontend Developer",
-      company: "StartupHub",
-      location: "Kigali, Rwanda",
-      period: "2019 - 2020",
-      description: "Focused on creating engaging user interfaces and improving user experience across various web applications. Worked closely with UX/UI designers to implement pixel-perfect designs.",
+      title: "Student & Learner",
+      company: "Self-Directed Learning",
+      location: "Rwanda",
+      period: "2020 - 2021",
+      description: "Intensive self-learning period focusing on programming fundamentals, web development, and obtaining industry certifications from various platforms.",
       achievements: [
-        "Improved user engagement by 35% through UI/UX enhancements",
-        "Developed reusable component library used across 5 projects",
-        "Mentored 2 junior developers in frontend best practices"
-      ]
-    },
-    {
-      title: "Junior Web Developer",
-      company: "WebCraft Agency",
-      location: "Kigali, Rwanda",
-      period: "2018 - 2019",
-      description: "Started my professional journey building websites and learning modern web development practices. Gained experience in both frontend and backend technologies.",
-      achievements: [
-        "Successfully delivered 15+ client websites",
-        "Learned and applied modern JavaScript frameworks",
-        "Contributed to open-source projects"
+        "Earned certificates from FreeCodeCamp, HubSpot, and UDACITY",
+        "Completed Java, C++, and HTML certifications from US Chicago",
+        "Built foundational knowledge in multiple programming languages",
+        "Participated in EdHeroes Global Forum 2024"
       ]
     }
   ];
@@ -58,11 +62,11 @@ export const Experience = () => {
       <div className="max-w-4xl mx-auto">
         <div className="text-center mb-16">
           <h2 className="text-4xl md:text-5xl font-bold text-white mb-6">
-            Professional <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-purple-500">Experience</span>
+            Professional <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-purple-500">Journey</span>
           </h2>
           <div className="w-24 h-1 bg-gradient-to-r from-blue-400 to-purple-500 mx-auto mb-8"></div>
           <p className="text-lg text-gray-400 max-w-2xl mx-auto">
-            My journey through the world of software development
+            From self-taught developer to tech entrepreneur - building solutions that matter
           </p>
         </div>
 

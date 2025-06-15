@@ -8,45 +8,50 @@ export const Skills = () => {
     frontend: {
       title: "Frontend",
       skills: [
-        { name: "React", level: 95 },
-        { name: "TypeScript", level: 90 },
-        { name: "Next.js", level: 88 },
-        { name: "Tailwind CSS", level: 92 },
-        { name: "Vue.js", level: 85 },
-        { name: "JavaScript", level: 95 }
+        { name: "React.js", level: 90 },
+        { name: "JavaScript (ES6+)", level: 95 },
+        { name: "HTML5", level: 95 },
+        { name: "CSS3", level: 90 },
+        { name: "Tailwind CSS", level: 88 },
+        { name: "Bootstrap", level: 85 },
+        { name: "Sass", level: 80 },
+        { name: "WordPress", level: 82 }
       ]
     },
     backend: {
       title: "Backend",
       skills: [
-        { name: "Node.js", level: 90 },
-        { name: "Python", level: 88 },
-        { name: "Express.js", level: 92 },
-        { name: "Django", level: 85 },
-        { name: "GraphQL", level: 80 },
-        { name: "REST APIs", level: 95 }
+        { name: "Node.js", level: 88 },
+        { name: "Express.js", level: 90 },
+        { name: "PHP", level: 85 },
+        { name: "Laravel", level: 80 },
+        { name: "Python", level: 75 },
+        { name: "Django", level: 70 },
+        { name: "Java", level: 78 },
+        { name: "RESTful APIs", level: 90 }
       ]
     },
     database: {
-      title: "Database",
+      title: "Database & Tools",
       skills: [
-        { name: "PostgreSQL", level: 90 },
-        { name: "MongoDB", level: 88 },
-        { name: "Redis", level: 82 },
-        { name: "MySQL", level: 85 },
-        { name: "Supabase", level: 87 },
-        { name: "Firebase", level: 80 }
+        { name: "MySQL", level: 90 },
+        { name: "mysql2 (Node.js)", level: 88 },
+        { name: "CRUD Operations", level: 95 },
+        { name: "Git & GitHub", level: 92 },
+        { name: "LocalWP", level: 85 },
+        { name: "Vercel", level: 80 },
+        { name: "VS Code", level: 95 }
       ]
     },
-    tools: {
-      title: "Tools & Others",
+    emerging: {
+      title: "Emerging Tech",
       skills: [
-        { name: "Git", level: 95 },
-        { name: "Docker", level: 85 },
-        { name: "AWS", level: 80 },
-        { name: "Vercel", level: 90 },
-        { name: "Linux", level: 88 },
-        { name: "CI/CD", level: 82 }
+        { name: "Blockchain", level: 65 },
+        { name: "Machine Learning", level: 70 },
+        { name: "AI Integration", level: 75 },
+        { name: "DevOps", level: 60 },
+        { name: "Authentication Systems", level: 85 },
+        { name: "Form Validation", level: 90 }
       ]
     }
   };
@@ -60,7 +65,7 @@ export const Skills = () => {
           </h2>
           <div className="w-24 h-1 bg-gradient-to-r from-blue-400 to-purple-500 mx-auto mb-8"></div>
           <p className="text-lg text-gray-400 max-w-2xl mx-auto">
-            A comprehensive toolkit for building modern, scalable applications
+            Full-stack expertise from intuitive frontends to secure backends and intelligent systems
           </p>
         </div>
 

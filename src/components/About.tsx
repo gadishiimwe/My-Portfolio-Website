@@ -5,23 +5,23 @@ export const About = () => {
   const highlights = [
     {
       icon: <Code2 className="w-8 h-8 text-blue-400" />,
-      title: "Frontend Excellence",
-      description: "Crafting responsive, interactive user interfaces with modern frameworks"
+      title: "Full-Stack Development",
+      description: "Building complete web applications from React frontends to Express/Laravel backends"
     },
     {
       icon: <Database className="w-8 h-8 text-purple-400" />,
-      title: "Backend Mastery",
-      description: "Building robust APIs and scalable server-side architectures"
+      title: "Database & CRUD",
+      description: "Expert in MySQL with full CRUD operations and secure data management"
     },
     {
       icon: <Globe className="w-8 h-8 text-green-400" />,
-      title: "Full-Stack Vision",
-      description: "End-to-end development from concept to deployment"
+      title: "Digital Solutions",
+      description: "Creating real-world applications including car rentals, school systems, and news portals"
     },
     {
       icon: <Zap className="w-8 h-8 text-yellow-400" />,
-      title: "Performance Focus",
-      description: "Optimizing applications for speed, scalability, and user experience"
+      title: "Emerging Technologies",
+      description: "Exploring AI integration, blockchain, and machine learning for future-ready solutions"
     }
   ];
 
@@ -38,19 +38,20 @@ export const About = () => {
         <div className="grid lg:grid-cols-2 gap-12 items-center">
           <div className="space-y-6">
             <p className="text-lg text-gray-300 leading-relaxed">
-              I'm a passionate fullstack developer with a love for creating digital solutions that make a real impact. 
-              With expertise spanning both frontend and backend technologies, I bring ideas to life through clean, 
-              efficient code and thoughtful user experiences.
+              I'm a passionate full-stack developer from Rwanda and founder of <strong className="text-blue-400">IntareTek</strong>, 
+              focused on building modern web applications and digital solutions that solve real-world problems. 
+              From intuitive interfaces to secure backends and intelligent systems — I enjoy the entire development journey.
             </p>
             <p className="text-lg text-gray-300 leading-relaxed">
-              My journey in software development has taken me through various technologies and frameworks, 
-              always with a focus on staying current with industry best practices and emerging trends. 
-              I believe in writing code that not only works but is maintainable, scalable, and elegant.
+              Currently working on exciting projects including car rental systems, school management platforms, 
+              news portals, church websites, and investment solutions. I specialize in the MERN stack with 
+              MySQL databases and have experience with Laravel, WordPress, and emerging technologies like 
+              AI integration and blockchain.
             </p>
             <p className="text-lg text-gray-300 leading-relaxed">
-              When I'm not coding, you'll find me exploring new technologies, contributing to open-source projects, 
-              or sharing knowledge with the developer community. I'm always excited about the next challenge 
-              and the opportunity to learn something new.
+              My personal mission is to <strong className="text-purple-400">build high-impact software and create lasting tech solutions</strong> — 
+              one line of code at a time. I'm always learning and exploring new technologies to stay at the 
+              forefront of modern development practices.
             </p>
           </div>
 
