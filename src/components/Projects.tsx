@@ -14,7 +14,7 @@ export const Projects = () => {
     {
       title: "Student Management System",
       description: "Comprehensive school management platform with student records, grade tracking, attendance management, and parent-teacher communication features.",
-      image: "https://images.unsplash.com/photo-1427504494785-3a9ca7044f45?w=500&h=300&fit=crop",
+      image: "https://images.unsplash.com/photo-1523050854058-8df90110c9f1?w=500&h=300&fit=crop",
       tags: ["React", "Express.js", "MySQL", "CRUD Operations"],
       github: "https://github.com/gadishiimwe/student-management-system",
       demo: "#"

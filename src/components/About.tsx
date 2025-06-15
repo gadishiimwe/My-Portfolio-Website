@@ -52,7 +52,7 @@ export const About = () => {
 
             <div className="space-y-6">
               <p className="text-lg text-gray-300 leading-relaxed">
-                I'm a passionate full-stack developer from Rwanda and founder of <strong className="text-blue-400">IntareTek</strong>, 
+                I'm a passionate full-stack developer from Rwanda and founder of <strong className="text-blue-400">EchoX</strong>, 
                 focused on building modern web applications and digital solutions that solve real-world problems. 
                 From intuitive interfaces to secure backends and intelligent systems — I enjoy the entire development journey.
               </p>

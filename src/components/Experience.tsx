@@ -1,11 +1,10 @@
-
 import { Calendar, MapPin } from "lucide-react";
 
 export const Experience = () => {
   const experiences = [
     {
       title: "Founder & Lead Developer",
-      company: "IntareTek",
+      company: "EchoX",
       location: "Rwanda",
       period: "2023 - Present",
       description: "Founded and leading a tech company focused on building digital solutions for businesses across Rwanda. Managing multiple client projects and developing innovative web applications.",
