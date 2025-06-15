@@ -1,5 +1,6 @@
+
 import { useState } from "react";
-import { Mail, Phone, MapPin, Send, Github, Linkedin, Twitter } from "lucide-react";
+import { Phone, MapPin, Send, Github, Linkedin } from "lucide-react";
 import { useToast } from "@/hooks/use-toast";
 import { supabase } from "@/integrations/supabase/client";
 
@@ -58,12 +59,6 @@ export const Contact = () => {
 
   const contactInfo = [
     {
-      icon: <Mail className="w-6 h-6" />,
-      title: "Email",
-      value: "gadyishimwe1@gmail.com",
-      link: "mailto:gadyishimwe1@gmail.com"
-    },
-    {
       icon: <Phone className="w-6 h-6" />,
       title: "Phone",
       value: "+250 781 166 081",
@@ -79,8 +74,7 @@ export const Contact = () => {
 
   const socialLinks = [
     { icon: <Github className="w-5 h-5" />, href: "https://github.com/gadishiimwe", label: "GitHub" },
-    { icon: <Linkedin className="w-5 h-5" />, href: "https://www.linkedin.com/in/gad-ishimwe/", label: "LinkedIn" },
-    { icon: <Mail className="w-5 h-5" />, href: "mailto:gadyishimwe1@gmail.com", label: "Email" }
+    { icon: <Linkedin className="w-5 h-5" />, href: "https://www.linkedin.com/in/gad-ishimwe/", label: "LinkedIn" }
   ];
 
   return (
