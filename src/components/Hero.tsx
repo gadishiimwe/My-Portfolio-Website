@@ -5,7 +5,7 @@ import { useEffect, useState } from "react";
 export const Hero = () => {
   const [displayText, setDisplayText] = useState("");
   const [currentIndex, setCurrentIndex] = useState(0);
-  const fullText = "Fullstack Developer";
+  const fullText = "Young & Affordable Full-Stack Developer";
 
   useEffect(() => {
     if (currentIndex < fullText.length) {
@@ -28,58 +28,60 @@ export const Hero = () => {
         <div className="absolute inset-0 bg-gradient-to-r from-blue-500/20 to-purple-500/20 animate-pulse"></div>
       </div>
       
-      <div className="text-center z-10 px-4 max-w-6xl mx-auto">
-        <div className="animate-fade-in">
-          {/* Professional Photo */}
-          <div className="flex justify-center mb-8">
+      <div className="z-10 px-4 max-w-7xl mx-auto">
+        <div className="grid lg:grid-cols-2 gap-12 items-center animate-fade-in">
+          {/* Left Column - Professional Photo */}
+          <div className="flex justify-center lg:justify-start order-2 lg:order-1">
             <div className="relative group">
               <img 
                 src="/lovable-uploads/288eda16-60e8-41e0-9f00-37d178198211.png"
                 alt="GAD ISHIMWE - Full Stack Developer"
-                className="w-48 h-48 md:w-56 md:h-56 object-cover rounded-full border-4 border-blue-500/30 shadow-2xl group-hover:border-blue-500/60 transition-all duration-300 hover:scale-105"
+                className="w-80 h-80 md:w-96 md:h-96 object-cover rounded-full border-4 border-blue-500/30 shadow-2xl group-hover:border-blue-500/60 transition-all duration-300 hover:scale-105"
               />
               <div className="absolute inset-0 rounded-full bg-gradient-to-t from-blue-500/20 to-purple-500/20 group-hover:from-blue-500/30 group-hover:to-purple-500/30 transition-all duration-300"></div>
             </div>
           </div>
 
-          <h1 className="text-5xl md:text-7xl font-bold text-white mb-6">
-            Hi, I'm <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-purple-500">GAD ISHIMWE</span>
-          </h1>
-          <h2 className="text-2xl md:text-3xl text-gray-300 mb-8 h-12">
-            <span className="border-r-2 border-blue-400 pr-1">{displayText}</span>
-          </h2>
-          <p className="text-lg md:text-xl text-gray-400 mb-12 max-w-2xl mx-auto leading-relaxed">
-            I craft digital experiences that bridge the gap between stunning design and powerful functionality. 
-            Passionate about creating scalable solutions that make a difference.
-          </p>
-          
-          {/* Social Links */}
-          <div className="flex justify-center space-x-6 mb-12">
-            <a href="https://github.com/gadishiimwe" target="_blank" rel="noopener noreferrer" 
-               className="p-3 bg-slate-800 rounded-full hover:bg-blue-600 transition-all duration-300 hover:scale-110 hover:shadow-lg hover:shadow-blue-500/25">
-              <Github size={24} className="text-white" />
-            </a>
-            <a href="https://www.linkedin.com/in/gad-ishimwe/" target="_blank" rel="noopener noreferrer"
-               className="p-3 bg-slate-800 rounded-full hover:bg-blue-600 transition-all duration-300 hover:scale-110 hover:shadow-lg hover:shadow-blue-500/25">
-              <Linkedin size={24} className="text-white" />
-            </a>
-            <a href="mailto:gadyishimwe1@gmail.com"
-               className="p-3 bg-slate-800 rounded-full hover:bg-blue-600 transition-all duration-300 hover:scale-110 hover:shadow-lg hover:shadow-blue-500/25">
-              <Mail size={24} className="text-white" />
-            </a>
-          </div>
+          {/* Right Column - Content */}
+          <div className="text-center lg:text-left order-1 lg:order-2">
+            <h1 className="text-4xl md:text-6xl font-bold text-white mb-6">
+              Hi, I'm <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-purple-500">GAD ISHIMWE</span>
+            </h1>
+            <h2 className="text-xl md:text-2xl text-gray-300 mb-8 h-12">
+              <span className="border-r-2 border-blue-400 pr-1">{displayText}</span>
+            </h2>
+            <p className="text-lg md:text-xl text-gray-400 mb-12 max-w-2xl mx-auto lg:mx-0 leading-relaxed">
+              I'm a young developer passionate about building modern digital experiences that blend beautiful design with powerful functionality — all at a budget-friendly cost. I create scalable solutions that make a real impact without breaking the bank.
+            </p>
+            
+            {/* Social Links */}
+            <div className="flex justify-center lg:justify-start space-x-6 mb-12">
+              <a href="https://github.com/gadishiimwe" target="_blank" rel="noopener noreferrer" 
+                 className="p-3 bg-slate-800 rounded-full hover:bg-blue-600 transition-all duration-300 hover:scale-110 hover:shadow-lg hover:shadow-blue-500/25">
+                <Github size={24} className="text-white" />
+              </a>
+              <a href="https://www.linkedin.com/in/gad-ishimwe/" target="_blank" rel="noopener noreferrer"
+                 className="p-3 bg-slate-800 rounded-full hover:bg-blue-600 transition-all duration-300 hover:scale-110 hover:shadow-lg hover:shadow-blue-500/25">
+                <Linkedin size={24} className="text-white" />
+              </a>
+              <a href="mailto:gadyishimwe1@gmail.com"
+                 className="p-3 bg-slate-800 rounded-full hover:bg-blue-600 transition-all duration-300 hover:scale-110 hover:shadow-lg hover:shadow-blue-500/25">
+                <Mail size={24} className="text-white" />
+              </a>
+            </div>
 
-          {/* CTA Buttons */}
-          <div className="flex flex-col sm:flex-row gap-4 justify-center mb-16">
-            <button 
-              onClick={scrollToAbout}
-              className="px-8 py-4 bg-gradient-to-r from-blue-500 to-purple-600 text-white font-semibold rounded-lg hover:from-blue-600 hover:to-purple-700 transition-all duration-300 hover:scale-105 hover:shadow-lg hover:shadow-blue-500/25"
-            >
-              Explore My Work
-            </button>
-            <button className="px-8 py-4 border-2 border-blue-400 text-blue-400 font-semibold rounded-lg hover:bg-blue-400 hover:text-white transition-all duration-300 hover:scale-105">
-              Download Resume
-            </button>
+            {/* CTA Buttons */}
+            <div className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start mb-16">
+              <button 
+                onClick={scrollToAbout}
+                className="px-8 py-4 bg-gradient-to-r from-blue-500 to-purple-600 text-white font-semibold rounded-lg hover:from-blue-600 hover:to-purple-700 transition-all duration-300 hover:scale-105 hover:shadow-lg hover:shadow-blue-500/25"
+              >
+                Explore My Work
+              </button>
+              <button className="px-8 py-4 border-2 border-blue-400 text-blue-400 font-semibold rounded-lg hover:bg-blue-400 hover:text-white transition-all duration-300 hover:scale-105">
+                Download Resume
+              </button>
+            </div>
           </div>
         </div>
       </div>
