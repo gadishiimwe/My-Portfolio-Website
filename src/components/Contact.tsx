@@ -52,7 +52,7 @@ export const Contact = () => {
   const socialLinks = [
     { icon: <Github className="w-5 h-5" />, href: "https://github.com/gadishiimwe", label: "GitHub" },
     { icon: <Linkedin className="w-5 h-5" />, href: "https://www.linkedin.com/in/gad-ishimwe/", label: "LinkedIn" },
-    { icon: <Twitter className="w-5 h-5" />, href: "https://twitter.com", label: "Twitter" }
+    { icon: <Mail className="w-5 h-5" />, href: "mailto:gadyishimwe1@gmail.com", label: "Email" }
   ];
 
   return (
@@ -203,7 +203,7 @@ export const Contact = () => {
         {/* Footer */}
         <div className="mt-20 pt-8 border-t border-slate-700 text-center">
           <p className="text-gray-400">
-            © 2024 Gad Ishimwe. Built with ❤️ and lots of ☕
+            © 2025 GAD ISHIMWE. All rights reserved.
           </p>
         </div>
       </div>

@@ -22,7 +22,7 @@ export const Hero = () => {
   };
 
   return (
-    <section id="home" className="min-h-screen flex items-center justify-center relative overflow-hidden">
+    <section id="home" className="min-h-screen flex items-center justify-center relative overflow-hidden pt-16">
       {/* Background Pattern */}
       <div className="absolute inset-0 opacity-10">
         <div className="absolute inset-0 bg-gradient-to-r from-blue-500/20 to-purple-500/20 animate-pulse"></div>
@@ -31,7 +31,7 @@ export const Hero = () => {
       <div className="z-10 px-4 max-w-7xl mx-auto">
         <div className="grid lg:grid-cols-2 gap-12 items-center animate-fade-in">
           {/* Left Column - Professional Photo */}
-          <div className="flex justify-center lg:justify-start order-2 lg:order-1">
+          <div className="flex justify-center lg:justify-start">
             <div className="relative group">
               <img 
                 src="/lovable-uploads/288eda16-60e8-41e0-9f00-37d178198211.png"
@@ -43,7 +43,7 @@ export const Hero = () => {
           </div>
 
           {/* Right Column - Content */}
-          <div className="text-center lg:text-left order-1 lg:order-2">
+          <div className="text-center lg:text-left">
             <h1 className="text-4xl md:text-6xl font-bold text-white mb-6">
               Hi, I'm <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-purple-500">GAD ISHIMWE</span>
             </h1>
