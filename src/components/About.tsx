@@ -37,6 +37,18 @@ export const About = () => {
 
         <div className="grid lg:grid-cols-2 gap-12 items-center">
           <div className="space-y-6">
+            {/* Professional Photo */}
+            <div className="flex justify-center lg:justify-start mb-8">
+              <div className="relative">
+                <img 
+                  src="/lovable-uploads/288eda16-60e8-41e0-9f00-37d178198211.png"
+                  alt="GAD ISHIMWE - Full Stack Developer"
+                  className="w-64 h-80 object-cover rounded-2xl shadow-2xl border-4 border-gradient-to-r from-blue-400 to-purple-500"
+                />
+                <div className="absolute inset-0 rounded-2xl bg-gradient-to-t from-blue-500/20 to-purple-500/20"></div>
+              </div>
+            </div>
+
             <p className="text-lg text-gray-300 leading-relaxed">
               I'm a passionate full-stack developer from Rwanda and founder of <strong className="text-blue-400">IntareTek</strong>, 
               focused on building modern web applications and digital solutions that solve real-world problems. 
