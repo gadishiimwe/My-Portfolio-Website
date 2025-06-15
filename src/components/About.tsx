@@ -52,20 +52,16 @@ export const About = () => {
 
             <div className="space-y-6">
               <p className="text-lg text-gray-300 leading-relaxed">
-                I'm a passionate full-stack developer from Rwanda and founder of <strong className="text-blue-400">EchoX</strong>, 
-                focused on building modern web applications and digital solutions that solve real-world problems. 
-                From intuitive interfaces to secure backends and intelligent systems — I enjoy the entire development journey.
+                I'm <strong className="text-blue-400">Gad Ishimwe</strong>, a full-stack developer from Rwanda with a passion for crafting digital solutions that matter. As the founder of <strong className="text-blue-400">EchoX</strong>, I focus on building responsive, user-friendly web applications that solve real problems and bring ideas to life.
               </p>
               <p className="text-lg text-gray-300 leading-relaxed">
-                Currently working on exciting projects including car rental systems, school management platforms, 
-                news portals, church websites, and investment solutions. I specialize in the MERN stack with 
-                MySQL databases and have experience with Laravel, WordPress, and emerging technologies like 
-                AI integration and blockchain.
+                I specialize in the MERN stack (MongoDB, Express, React, Node.js) and MySQL, with experience in tools like WordPress, Firebase, Tailwind CSS, and emerging technologies like AI integration and blockchain. From backend APIs to front-end design, I enjoy building systems that are both powerful and easy to use.
               </p>
               <p className="text-lg text-gray-300 leading-relaxed">
-                My personal mission is to <strong className="text-purple-400">build high-impact software and create lasting tech solutions</strong> — 
-                one line of code at a time. I'm always learning and exploring new technologies to stay at the 
-                forefront of modern development practices.
+                Currently, I'm working on projects like car rental platforms, school and church websites, investment systems, and modern news portals. Each line of code I write is aimed at delivering impact, performance, and real-world value.
+              </p>
+              <p className="text-lg text-gray-300 leading-relaxed">
+                <strong className="text-purple-400">Always learning, always building</strong> — I'm committed to pushing boundaries and growing as a developer every day.
               </p>
             </div>
           </div>
