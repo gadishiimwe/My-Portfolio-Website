@@ -1,4 +1,3 @@
-
 import { useState } from "react";
 import { Phone, MapPin, Send, Github, Linkedin, Mail } from "lucide-react";
 import { useToast } from "@/hooks/use-toast";
@@ -237,12 +236,6 @@ export const Contact = () => {
         <div className="mt-20 pt-8 border-t border-slate-700">
           <div className="text-center space-y-4">
             <h3 className="text-xl font-semibold text-white">Let's Connect</h3>
-            <div className="flex items-center justify-center space-x-2 text-gray-400">
-              <Mail className="w-5 h-5 text-blue-400" />
-              <a href="mailto:gadyishimwe1@gmail.com" className="hover:text-blue-400 transition-colors duration-200">
-                gadyishimwe1@gmail.com
-              </a>
-            </div>
             <p className="text-gray-400 text-sm">
               © 2025 GAD ISHIMWE. All rights reserved.
             </p>
