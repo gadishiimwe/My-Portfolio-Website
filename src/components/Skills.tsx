@@ -53,6 +53,19 @@ export const Skills = () => {
         { name: "Authentication Systems", level: 85 },
         { name: "Form Validation", level: 90 }
       ]
+    },
+    advanced: {
+      title: "Advanced Skills",
+      skills: [
+        { name: "Automated Bug Detection", level: 90 },
+        { name: "Code Review Tools", level: 88 },
+        { name: "Voice Search Integration", level: 85 },
+        { name: "Voice Command Features", level: 83 },
+        { name: "SEO Analysis", level: 92 },
+        { name: "SEO Optimization", level: 90 },
+        { name: "Performance Optimization", level: 87 },
+        { name: "Security Auditing", level: 85 }
+      ]
     }
   };
 

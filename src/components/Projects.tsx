@@ -4,42 +4,58 @@ import { ExternalLink, Github } from "lucide-react";
 export const Projects = () => {
   const projects = [
     {
-      title: "Car Rental System",
-      description: "Full-stack car rental platform with booking management, user authentication, and payment processing. Built for Mufasa Business Group with modern UI and secure backend.",
-      image: "https://images.unsplash.com/photo-1449824913935-59a10b8d2000?w=500&h=300&fit=crop",
-      tags: ["React", "Node.js", "Express", "MySQL", "Authentication"],
-      github: "https://github.com/gadishiimwe/carrental",
+      title: "Apartment Visitor Management System (AVMS)",
+      description: "A PHP-based system to manage apartment visitors securely. Includes check-in/check-out, visitor logs, admin panel, and report generation with PDF export functionality.",
+      image: "https://images.unsplash.com/photo-1560472354-b33ff0c44a43?w=500&h=300&fit=crop",
+      tags: ["PHP", "MySQL", "Bootstrap", "CRUD", "PDF Export"],
+      github: "#",
+      demo: "#"
+    },
+    {
+      title: "Hospital Management System",
+      description: "Complete hospital web application to manage patients, staff, appointments, billing, and medical reports with comprehensive admin dashboard and authentication.",
+      image: "https://images.unsplash.com/photo-1551601651-2a8555f1a136?w=500&h=300&fit=crop",
+      tags: ["PHP", "MySQL", "Admin Dashboard", "Authentication"],
+      github: "#",
       demo: "#"
     },
     {
       title: "Student Management System",
-      description: "Comprehensive school management platform with student records, grade tracking, attendance management, and parent-teacher communication features.",
+      description: "Comprehensive school management platform that tracks students, grades, attendance, parent information, and classroom data with secure authentication and responsive admin portal.",
       image: "https://images.unsplash.com/photo-1523050854058-8df90110c9f1?w=500&h=300&fit=crop",
-      tags: ["React", "Express.js", "MySQL", "CRUD Operations"],
+      tags: ["React", "Express.js", "MySQL", "Secure Auth", "Admin Portal"],
       github: "https://github.com/gadishiimwe/student-management-system",
       demo: "#"
     },
     {
       title: "News Portal",
-      description: "Dynamic news website with content management system, article categorization, user comments, and admin dashboard for content moderation.",
+      description: "Dynamic Laravel-based content management system for posting news, categorizing content, managing user comments, and providing interactive user experience.",
       image: "https://images.unsplash.com/photo-1504711434969-e33886168f5c?w=500&h=300&fit=crop",
-      tags: ["PHP", "Laravel", "MySQL", "CMS", "Admin Panel"],
+      tags: ["Laravel", "PHP", "MySQL", "Admin Panel", "User Interaction"],
       github: "https://github.com/gadishiimwe/newsportal",
       demo: "#"
     },
     {
+      title: "Car Rental Platform – Mufasa Business Group",
+      description: "Full-stack car rental platform with booking management, user authentication, and payment processing. Built for Mufasa Business Group with modern UI and secure backend.",
+      image: "https://images.unsplash.com/photo-1449824913935-59a10b8d2000?w=500&h=300&fit=crop",
+      tags: ["React", "Node.js", "Express", "MySQL", "Authentication", "Booking Logic"],
+      github: "https://github.com/gadishiimwe/carrental",
+      demo: "#"
+    },
+    {
       title: "UNITED CHRISTIAN CHURCH Website",
-      description: "Church website with event management, sermon streaming, member portal, and donation system. Features responsive design and content management.",
+      description: "Modern church website with event calendar, sermon video streaming, member dashboard, and integrated donation system featuring responsive design and content management.",
       image: "https://images.unsplash.com/photo-1438232992991-995b7058bbb3?w=500&h=300&fit=crop",
-      tags: ["WordPress", "PHP", "MySQL", "Custom Themes"],
+      tags: ["ReactJS", "NodeJS", "MySQL", "Custom Theme"],
       github: "#",
       demo: "#"
     },
     {
-      title: "ECHOX - Super App",
-      description: "All-in-One digital platform combining multiple services in a single application. Features modern UI, user management, and integrated payment systems.",
+      title: "EchoX – The Super App",
+      description: "All-in-One digital platform combining social interaction, news feeds, payment systems, and multiple services in a single comprehensive application with modern UI.",
       image: "https://images.unsplash.com/photo-1551650975-87deedd944c3?w=500&h=300&fit=crop",
-      tags: ["React", "Node.js", "Multi-Service", "Payment Integration"],
+      tags: ["React", "Node.js", "MongoDB", "Firebase", "Payment Integration"],
       github: "#",
       demo: "#"
     },

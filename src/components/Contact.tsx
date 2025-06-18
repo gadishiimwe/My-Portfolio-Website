@@ -1,6 +1,6 @@
 
 import { useState } from "react";
-import { Phone, MapPin, Send, Github, Linkedin } from "lucide-react";
+import { Phone, MapPin, Send, Github, Linkedin, Mail } from "lucide-react";
 import { useToast } from "@/hooks/use-toast";
 import { supabase } from "@/integrations/supabase/client";
 
@@ -69,6 +69,12 @@ export const Contact = () => {
       title: "Location",
       value: "Kigali, Rwanda",
       link: null
+    },
+    {
+      icon: <Mail className="w-6 h-6" />,
+      title: "Email",
+      value: "gadyishimwe1@gmail.com",
+      link: "mailto:gadyishimwe1@gmail.com"
     }
   ];
 
@@ -228,10 +234,19 @@ export const Contact = () => {
         </div>
 
         {/* Footer */}
-        <div className="mt-20 pt-8 border-t border-slate-700 text-center">
-          <p className="text-gray-400">
-            © 2025 GAD ISHIMWE. All rights reserved.
-          </p>
+        <div className="mt-20 pt-8 border-t border-slate-700">
+          <div className="text-center space-y-4">
+            <h3 className="text-xl font-semibold text-white">Let's Connect</h3>
+            <div className="flex items-center justify-center space-x-2 text-gray-400">
+              <Mail className="w-5 h-5 text-blue-400" />
+              <a href="mailto:gadyishimwe1@gmail.com" className="hover:text-blue-400 transition-colors duration-200">
+                gadyishimwe1@gmail.com
+              </a>
+            </div>
+            <p className="text-gray-400 text-sm">
+              © 2025 GAD ISHIMWE. All rights reserved.
+            </p>
+          </div>
         </div>
       </div>
     </section>
