@@ -1,4 +1,3 @@
-
 import { useState } from "react";
 
 export const Skills = () => {
@@ -8,63 +7,63 @@ export const Skills = () => {
     frontend: {
       title: "Frontend",
       skills: [
-        { name: "React.js", level: 90 },
-        { name: "JavaScript (ES6+)", level: 95 },
-        { name: "HTML5", level: 95 },
-        { name: "CSS3", level: 90 },
-        { name: "Tailwind CSS", level: 88 },
-        { name: "Bootstrap", level: 85 },
-        { name: "Sass", level: 80 },
-        { name: "WordPress", level: 82 }
+        { name: "React.js", level: 95 },
+        { name: "JavaScript (ES6+)", level: 98 },
+        { name: "HTML5", level: 98 },
+        { name: "CSS3", level: 95 },
+        { name: "Tailwind CSS", level: 93 },
+        { name: "Bootstrap", level: 92 },
+        { name: "Sass", level: 91 },
+        { name: "WordPress", level: 92 }
       ]
     },
     backend: {
       title: "Backend",
       skills: [
-        { name: "Node.js", level: 88 },
-        { name: "Express.js", level: 90 },
-        { name: "PHP", level: 85 },
-        { name: "Laravel", level: 80 },
-        { name: "Python", level: 75 },
-        { name: "Django", level: 70 },
-        { name: "Java", level: 78 },
-        { name: "RESTful APIs", level: 90 }
+        { name: "Node.js", level: 94 },
+        { name: "Express.js", level: 96 },
+        { name: "PHP", level: 93 },
+        { name: "Laravel", level: 92 },
+        { name: "Python", level: 91 },
+        { name: "Django", level: 90 },
+        { name: "Java", level: 91 },
+        { name: "RESTful APIs", level: 96 }
       ]
     },
     database: {
       title: "Database & Tools",
       skills: [
-        { name: "MySQL", level: 90 },
-        { name: "mysql2 (Node.js)", level: 88 },
-        { name: "CRUD Operations", level: 95 },
-        { name: "Git & GitHub", level: 92 },
-        { name: "LocalWP", level: 85 },
-        { name: "Vercel", level: 80 },
-        { name: "VS Code", level: 95 }
+        { name: "MySQL", level: 96 },
+        { name: "mysql2 (Node.js)", level: 94 },
+        { name: "CRUD Operations", level: 98 },
+        { name: "Git & GitHub", level: 97 },
+        { name: "LocalWP", level: 92 },
+        { name: "Vercel", level: 91 },
+        { name: "VS Code", level: 98 }
       ]
     },
     emerging: {
       title: "Emerging Tech",
       skills: [
-        { name: "Blockchain", level: 65 },
-        { name: "Machine Learning", level: 70 },
-        { name: "AI Integration", level: 75 },
-        { name: "DevOps", level: 60 },
-        { name: "Authentication Systems", level: 85 },
-        { name: "Form Validation", level: 90 }
+        { name: "Blockchain", level: 91 },
+        { name: "Machine Learning", level: 93 },
+        { name: "AI Integration", level: 95 },
+        { name: "DevOps", level: 90 },
+        { name: "Authentication Systems", level: 96 },
+        { name: "Form Validation", level: 97 }
       ]
     },
     advanced: {
       title: "Advanced Skills",
       skills: [
-        { name: "Automated Bug Detection", level: 90 },
-        { name: "Code Review Tools", level: 88 },
-        { name: "Voice Search Integration", level: 85 },
-        { name: "Voice Command Features", level: 83 },
-        { name: "SEO Analysis", level: 92 },
-        { name: "SEO Optimization", level: 90 },
-        { name: "Performance Optimization", level: 87 },
-        { name: "Security Auditing", level: 85 }
+        { name: "Automated Bug Detection", level: 96 },
+        { name: "Code Review Tools", level: 94 },
+        { name: "Voice Search Integration", level: 93 },
+        { name: "Voice Command Features", level: 92 },
+        { name: "SEO Analysis", level: 97 },
+        { name: "SEO Optimization", level: 96 },
+        { name: "Performance Optimization", level: 94 },
+        { name: "Security Auditing", level: 93 }
       ]
     }
   };

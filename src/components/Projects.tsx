@@ -1,9 +1,13 @@
 
 import { ExternalLink, Github } from "lucide-react";
+import { useNavigate } from "react-router-dom";
 
 export const Projects = () => {
+  const navigate = useNavigate();
+
   const projects = [
     {
+      id: "avms",
       title: "Apartment Visitor Management System (AVMS)",
       description: "A PHP-based system to manage apartment visitors securely. Includes check-in/check-out, visitor logs, admin panel, and report generation with PDF export functionality.",
       image: "https://images.unsplash.com/photo-1560472354-b33ff0c44a43?w=500&h=300&fit=crop",
@@ -12,6 +16,7 @@ export const Projects = () => {
       demo: "#"
     },
     {
+      id: "hospital-management",
       title: "Hospital Management System",
       description: "Complete hospital web application to manage patients, staff, appointments, billing, and medical reports with comprehensive admin dashboard and authentication.",
       image: "https://images.unsplash.com/photo-1551601651-2a8555f1a136?w=500&h=300&fit=crop",
@@ -20,6 +25,7 @@ export const Projects = () => {
       demo: "#"
     },
     {
+      id: "student-management",
       title: "Student Management System",
       description: "Comprehensive school management platform that tracks students, grades, attendance, parent information, and classroom data with secure authentication and responsive admin portal.",
       image: "https://images.unsplash.com/photo-1523050854058-8df90110c9f1?w=500&h=300&fit=crop",
@@ -28,6 +34,7 @@ export const Projects = () => {
       demo: "#"
     },
     {
+      id: "news-portal",
       title: "News Portal",
       description: "Dynamic Laravel-based content management system for posting news, categorizing content, managing user comments, and providing interactive user experience.",
       image: "https://images.unsplash.com/photo-1504711434969-e33886168f5c?w=500&h=300&fit=crop",
@@ -36,6 +43,7 @@ export const Projects = () => {
       demo: "#"
     },
     {
+      id: "car-rental",
       title: "Car Rental Platform – Mufasa Business Group",
       description: "Full-stack car rental platform with booking management, user authentication, and payment processing. Built for Mufasa Business Group with modern UI and secure backend.",
       image: "https://images.unsplash.com/photo-1449824913935-59a10b8d2000?w=500&h=300&fit=crop",
@@ -44,6 +52,7 @@ export const Projects = () => {
       demo: "#"
     },
     {
+      id: "church-website",
       title: "UNITED CHRISTIAN CHURCH Website",
       description: "Modern church website with event calendar, sermon video streaming, member dashboard, and integrated donation system featuring responsive design and content management.",
       image: "https://images.unsplash.com/photo-1438232992991-995b7058bbb3?w=500&h=300&fit=crop",
@@ -52,6 +61,7 @@ export const Projects = () => {
       demo: "#"
     },
     {
+      id: "echox",
       title: "EchoX – The Super App",
       description: "All-in-One digital platform combining social interaction, news feeds, payment systems, and multiple services in a single comprehensive application with modern UI.",
       image: "https://images.unsplash.com/photo-1551650975-87deedd944c3?w=500&h=300&fit=crop",
@@ -60,6 +70,7 @@ export const Projects = () => {
       demo: "#"
     },
     {
+      id: "investment-platform",
       title: "Investment Solutions Platform",
       description: "Financial platform for investment tracking, portfolio management, and market analysis with real-time data integration and secure transactions.",
       image: "https://images.unsplash.com/photo-1559526324-4b87b5e36e44?w=500&h=300&fit=crop",
@@ -68,6 +79,10 @@ export const Projects = () => {
       demo: "#"
     }
   ];
+
+  const handleProjectClick = (projectId: string) => {
+    navigate(`/project/${projectId}`);
+  };
 
   return (
     <section id="projects" className="py-20 px-4">
@@ -86,7 +101,8 @@ export const Projects = () => {
           {projects.map((project, index) => (
             <div 
               key={index}
-              className="group bg-slate-800/50 backdrop-blur-sm rounded-xl overflow-hidden border border-slate-700 hover:border-blue-500/50 transition-all duration-300 hover:scale-105 hover:shadow-2xl hover:shadow-blue-500/10"
+              onClick={() => handleProjectClick(project.id)}
+              className="group bg-slate-800/50 backdrop-blur-sm rounded-xl overflow-hidden border border-slate-700 hover:border-blue-500/50 transition-all duration-300 hover:scale-105 hover:shadow-2xl hover:shadow-blue-500/10 cursor-pointer"
             >
               <div className="relative overflow-hidden">
                 <img 
@@ -100,6 +116,7 @@ export const Projects = () => {
                     href={project.github}
                     target="_blank"
                     rel="noopener noreferrer"
+                    onClick={(e) => e.stopPropagation()}
                     className="p-2 bg-slate-900/80 backdrop-blur-sm rounded-full hover:bg-blue-600 transition-colors duration-200"
                   >
                     <Github size={16} className="text-white" />
@@ -108,6 +125,7 @@ export const Projects = () => {
                     href={project.demo}
                     target="_blank"
                     rel="noopener noreferrer"
+                    onClick={(e) => e.stopPropagation()}
                     className="p-2 bg-slate-900/80 backdrop-blur-sm rounded-full hover:bg-blue-600 transition-colors duration-200"
                   >
                     <ExternalLink size={16} className="text-white" />

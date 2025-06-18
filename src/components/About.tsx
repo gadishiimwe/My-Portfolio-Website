@@ -52,13 +52,13 @@ export const About = () => {
 
             <div className="space-y-6">
               <p className="text-lg text-gray-300 leading-relaxed">
-                I'm <strong className="text-blue-400">Gad Ishimwe</strong>, a full-stack developer from Rwanda with a passion for crafting digital solutions that matter. As the founder of <strong className="text-blue-400">EchoX</strong>, I focus on building responsive, user-friendly web applications that solve real problems and bring ideas to life.
+                I'm <strong className="text-blue-400">Gad Ishimwe</strong>, a full-stack developer from Rwanda with <strong className="text-blue-400">3 years of experience</strong> crafting digital solutions that matter. As the founder of <strong className="text-blue-400">EchoX</strong>, I focus on building responsive, user-friendly web applications that solve real problems and bring ideas to life.
               </p>
               <p className="text-lg text-gray-300 leading-relaxed">
-                I specialize in the MERN stack (MongoDB, Express, React, Node.js) and MySQL, with experience in tools like WordPress, Firebase, Tailwind CSS, and emerging technologies like AI integration and blockchain. From backend APIs to front-end design, I enjoy building systems that are both powerful and easy to use.
+                Over the past 3 years, I've specialized in the MERN stack (MongoDB, Express, React, Node.js) and MySQL, with extensive experience in tools like WordPress, Firebase, Tailwind CSS, and emerging technologies like AI integration and blockchain. From backend APIs to front-end design, I enjoy building systems that are both powerful and easy to use.
               </p>
               <p className="text-lg text-gray-300 leading-relaxed">
-                Currently, I'm working on projects like car rental platforms, school and church websites, investment systems, and modern news portals. Each line of code I write is aimed at delivering impact, performance, and real-world value.
+                Throughout my 3-year journey, I've successfully delivered projects like car rental platforms, school and church websites, investment systems, and modern news portals. Each line of code I write is aimed at delivering impact, performance, and real-world value.
               </p>
               <p className="text-lg text-gray-300 leading-relaxed">
                 <strong className="text-purple-400">Always learning, always building</strong> — I'm committed to pushing boundaries and growing as a developer every day.
