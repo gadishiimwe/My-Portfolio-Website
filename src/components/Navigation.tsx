@@ -1,6 +1,7 @@
 
 import { useState, useEffect } from "react";
 import { Menu, X } from "lucide-react";
+import { Link } from "react-router-dom";
 
 export const Navigation = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -31,10 +32,6 @@ export const Navigation = () => {
     }
   };
 
-  const scrollToHome = () => {
-    document.querySelector("#home")?.scrollIntoView({ behavior: "smooth" });
-  };
-
   return (
     <nav className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
       isScrolled ? "bg-slate-900/95 backdrop-blur-sm shadow-lg" : "bg-transparent"
@@ -42,12 +39,12 @@ export const Navigation = () => {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between h-16">
           <div className="flex-shrink-0">
-            <button 
-              onClick={scrollToHome}
+            <Link 
+              to="/"
               className="text-2xl font-bold text-white hover:text-blue-400 transition-colors duration-200"
             >
               GAD<span className="text-blue-400">.</span>
-            </button>
+            </Link>
           </div>
           
           {/* Desktop Navigation */}
