@@ -1,6 +1,5 @@
-
 import { useParams, useNavigate } from "react-router-dom";
-import { ArrowLeft, ExternalLink, Github } from "lucide-react";
+import { ArrowLeft, ExternalLink, Github, Phone, MapPin, Send, Linkedin, Mail } from "lucide-react";
 import { Navigation } from "@/components/Navigation";
 
 const ProjectDetails = () => {
@@ -29,8 +28,22 @@ const ProjectDetails = () => {
         "Responsive design for all devices",
         "Visitor photo capture and storage"
       ],
+      challenges: [
+        "Implementing secure access control mechanisms",
+        "Designing efficient database schema for visitor tracking",
+        "Creating user-friendly PDF report generation",
+        "Ensuring responsive design across all devices"
+      ],
+      solutions: [
+        "Developed multi-layered authentication system",
+        "Optimized database queries for faster data retrieval",
+        "Integrated TCPDF library for professional reports",
+        "Used Bootstrap framework for mobile-first design"
+      ],
       github: "#",
-      demo: "#"
+      demo: "#",
+      duration: "3 months",
+      role: "Full-Stack Developer"
     },
     "hospital-management": {
       title: "Hospital Management System",
@@ -53,8 +66,22 @@ const ProjectDetails = () => {
         "Secure authentication system",
         "Patient history tracking"
       ],
+      challenges: [
+        "Managing complex patient data relationships",
+        "Implementing secure medical record access",
+        "Creating intuitive appointment scheduling",
+        "Ensuring HIPAA compliance considerations"
+      ],
+      solutions: [
+        "Designed normalized database structure",
+        "Implemented role-based access control",
+        "Built calendar-based scheduling interface",
+        "Added comprehensive audit logging"
+      ],
       github: "#",
-      demo: "#"
+      demo: "#",
+      duration: "4 months",
+      role: "Lead Developer"
     },
     "student-management": {
       title: "Student Management System",
@@ -77,8 +104,22 @@ const ProjectDetails = () => {
         "Responsive admin dashboard",
         "Real-time data updates"
       ],
+      challenges: [
+        "Creating scalable React component architecture",
+        "Implementing real-time grade updates",
+        "Managing complex parent-student relationships",
+        "Ensuring secure data transmission"
+      ],
+      solutions: [
+        "Used React hooks and context for state management",
+        "Implemented WebSocket connections for live updates",
+        "Built flexible user role system",
+        "Added JWT authentication with refresh tokens"
+      ],
       github: "https://github.com/gadishiimwe/student-management-system",
-      demo: "#"
+      demo: "#",
+      duration: "5 months",
+      role: "Full-Stack Developer"
     },
     "news-portal": {
       title: "News Portal",
@@ -101,8 +142,22 @@ const ProjectDetails = () => {
         "Responsive design",
         "Content scheduling"
       ],
+      challenges: [
+        "Building efficient content management workflows",
+        "Implementing advanced search functionality",
+        "Creating engaging user interaction features",
+        "Optimizing for search engine visibility"
+      ],
+      solutions: [
+        "Leveraged Laravel's Eloquent ORM for data management",
+        "Integrated full-text search capabilities",
+        "Built comprehensive commenting system",
+        "Implemented meta tag optimization and sitemap generation"
+      ],
       github: "https://github.com/gadishiimwe/newsportal",
-      demo: "#"
+      demo: "#",
+      duration: "3 months",
+      role: "Backend Developer"
     },
     "car-rental": {
       title: "Car Rental Platform – Mufasa Business Group",
@@ -125,8 +180,22 @@ const ProjectDetails = () => {
         "Customer support features",
         "Mobile-responsive design"
       ],
+      challenges: [
+        "Implementing complex booking logic with availability checking",
+        "Integrating secure payment processing",
+        "Building responsive vehicle showcase",
+        "Creating efficient admin management tools"
+      ],
+      solutions: [
+        "Developed sophisticated booking algorithm with conflict resolution",
+        "Integrated Stripe payment gateway with webhook handling",
+        "Used CSS Grid and Flexbox for responsive vehicle gallery",
+        "Built comprehensive admin dashboard with real-time analytics"
+      ],
       github: "https://github.com/gadishiimwe/carrental",
-      demo: "#"
+      demo: "#",
+      duration: "6 months",
+      role: "Full-Stack Developer"
     },
     "church-website": {
       title: "UNITED CHRISTIAN CHURCH Website",
@@ -149,8 +218,22 @@ const ProjectDetails = () => {
         "Responsive design",
         "Content management system"
       ],
+      challenges: [
+        "Implementing video streaming for sermons",
+        "Creating engaging community features",
+        "Building secure donation processing",
+        "Designing spiritual and modern interface"
+      ],
+      solutions: [
+        "Integrated video.js for cross-platform streaming",
+        "Built interactive community bulletin board",
+        "Implemented PayPal and Stripe donation gateways",
+        "Created custom theme with spiritual aesthetics"
+      ],
       github: "#",
-      demo: "#"
+      demo: "#",
+      duration: "4 months",
+      role: "Full-Stack Developer"
     },
     "echox": {
       title: "EchoX – The Super App",
@@ -173,8 +256,22 @@ const ProjectDetails = () => {
         "Mobile-responsive design",
         "Advanced security features"
       ],
+      challenges: [
+        "Architecting scalable microservices",
+        "Implementing real-time communication",
+        "Managing complex state across multiple services",
+        "Ensuring consistent user experience"
+      ],
+      solutions: [
+        "Built modular architecture with service-oriented design",
+        "Used Socket.io for real-time features",
+        "Implemented Redux with middleware for state management",
+        "Created unified design system with component library"
+      ],
       github: "#",
-      demo: "#"
+      demo: "#",
+      duration: "8 months",
+      role: "Lead Full-Stack Developer"
     },
     "investment-platform": {
       title: "Investment Solutions Platform",
@@ -197,8 +294,22 @@ const ProjectDetails = () => {
         "Performance analytics",
         "Mobile-responsive dashboard"
       ],
+      challenges: [
+        "Integrating real-time financial data APIs",
+        "Building complex charting and analytics",
+        "Ensuring financial data security",
+        "Creating intuitive investment tracking"
+      ],
+      solutions: [
+        "Integrated multiple financial data providers with fallbacks",
+        "Used D3.js and Recharts for advanced visualizations",
+        "Implemented end-to-end encryption for sensitive data",
+        "Built progressive web app for mobile accessibility"
+      ],
       github: "#",
-      demo: "#"
+      demo: "#",
+      duration: "7 months",
+      role: "Senior Full-Stack Developer"
     }
   };
 
@@ -219,6 +330,11 @@ const ProjectDetails = () => {
       </div>
     );
   }
+
+  const socialLinks = [
+    { icon: <Github className="w-5 h-5" />, href: "https://github.com/gadishiimwe", label: "GitHub" },
+    { icon: <Linkedin className="w-5 h-5" />, href: "https://www.linkedin.com/in/gad-ishimwe/", label: "LinkedIn" }
+  ];
 
   return (
     <div className="min-h-screen bg-gradient-to-br from-slate-900 via-slate-800 to-slate-900">
@@ -259,6 +375,18 @@ const ProjectDetails = () => {
                 </p>
               </div>
 
+              {/* Project Overview */}
+              <div className="grid md:grid-cols-2 gap-6">
+                <div className="bg-slate-800/50 backdrop-blur-sm rounded-xl p-6 border border-slate-700">
+                  <h3 className="text-xl font-bold text-white mb-3">Project Duration</h3>
+                  <p className="text-blue-400 text-lg font-semibold">{project.duration}</p>
+                </div>
+                <div className="bg-slate-800/50 backdrop-blur-sm rounded-xl p-6 border border-slate-700">
+                  <h3 className="text-xl font-bold text-white mb-3">My Role</h3>
+                  <p className="text-purple-400 text-lg font-semibold">{project.role}</p>
+                </div>
+              </div>
+
               {/* Features */}
               <div>
                 <h2 className="text-3xl font-bold text-white mb-6">Key Features</h2>
@@ -266,12 +394,44 @@ const ProjectDetails = () => {
                   {project.features.map((feature, index) => (
                     <div 
                       key={index}
-                      className="flex items-start p-4 bg-slate-800/50 rounded-lg border border-slate-700"
+                      className="flex items-start p-4 bg-slate-800/50 rounded-lg border border-slate-700 hover:border-blue-500/50 transition-colors"
                     >
                       <span className="text-blue-400 mr-3 mt-1">•</span>
                       <span className="text-gray-300">{feature}</span>
                     </div>
                   ))}
+                </div>
+              </div>
+
+              {/* Challenges & Solutions */}
+              <div className="grid md:grid-cols-2 gap-8">
+                <div>
+                  <h2 className="text-2xl font-bold text-white mb-6">Challenges</h2>
+                  <div className="space-y-4">
+                    {project.challenges.map((challenge, index) => (
+                      <div 
+                        key={index}
+                        className="p-4 bg-red-500/10 rounded-lg border border-red-500/20"
+                      >
+                        <span className="text-red-400 mr-3">⚡</span>
+                        <span className="text-gray-300">{challenge}</span>
+                      </div>
+                    ))}
+                  </div>
+                </div>
+                <div>
+                  <h2 className="text-2xl font-bold text-white mb-6">Solutions</h2>
+                  <div className="space-y-4">
+                    {project.solutions.map((solution, index) => (
+                      <div 
+                        key={index}
+                        className="p-4 bg-green-500/10 rounded-lg border border-green-500/20"
+                      >
+                        <span className="text-green-400 mr-3">✓</span>
+                        <span className="text-gray-300">{solution}</span>
+                      </div>
+                    ))}
+                  </div>
                 </div>
               </div>
 
@@ -349,6 +509,115 @@ const ProjectDetails = () => {
             </div>
           </div>
         </div>
+
+        {/* Footer */}
+        <footer className="mt-20 pt-12 border-t border-slate-700">
+          <div className="max-w-6xl mx-auto">
+            <div className="grid md:grid-cols-4 gap-8 mb-12">
+              {/* About Section */}
+              <div className="md:col-span-2">
+                <h3 className="text-2xl font-bold text-white mb-4">GAD ISHIMWE</h3>
+                <p className="text-gray-400 leading-relaxed mb-6">
+                  Full-Stack Developer with 3+ years of experience creating innovative web solutions. 
+                  Passionate about building scalable applications that solve real-world problems.
+                </p>
+                <div className="flex space-x-4">
+                  {socialLinks.map((social, index) => (
+                    <a
+                      key={index}
+                      href={social.href}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="p-3 bg-slate-800/50 backdrop-blur-sm rounded-xl border border-slate-700 hover:border-blue-500/50 hover:bg-blue-500/10 transition-all duration-300 hover:scale-110"
+                      aria-label={social.label}
+                    >
+                      <div className="text-gray-400 hover:text-blue-400 transition-colors duration-200">
+                        {social.icon}
+                      </div>
+                    </a>
+                  ))}
+                </div>
+              </div>
+
+              {/* Quick Links */}
+              <div>
+                <h4 className="text-white font-semibold mb-4">Quick Links</h4>
+                <div className="space-y-2">
+                  <button 
+                    onClick={() => navigate('/#about')}
+                    className="block text-gray-400 hover:text-blue-400 transition-colors duration-200"
+                  >
+                    About Me
+                  </button>
+                  <button 
+                    onClick={() => navigate('/#projects')}
+                    className="block text-gray-400 hover:text-blue-400 transition-colors duration-200"
+                  >
+                    All Projects
+                  </button>
+                  <button 
+                    onClick={() => navigate('/#skills')}
+                    className="block text-gray-400 hover:text-blue-400 transition-colors duration-200"
+                  >
+                    Skills
+                  </button>
+                  <button 
+                    onClick={() => navigate('/#contact')}
+                    className="block text-gray-400 hover:text-blue-400 transition-colors duration-200"
+                  >
+                    Contact
+                  </button>
+                </div>
+              </div>
+
+              {/* Contact Info */}
+              <div>
+                <h4 className="text-white font-semibold mb-4">Get In Touch</h4>
+                <div className="space-y-3">
+                  <div className="flex items-center text-gray-400">
+                    <Phone className="w-4 h-4 mr-3 text-blue-400" />
+                    <a href="tel:+250781166081" className="hover:text-blue-400 transition-colors duration-200">
+                      +250 781 166 081
+                    </a>
+                  </div>
+                  <div className="flex items-center text-gray-400">
+                    <Mail className="w-4 h-4 mr-3 text-blue-400" />
+                    <a href="mailto:gadyishimwe1@gmail.com" className="hover:text-blue-400 transition-colors duration-200">
+                      gadyishimwe1@gmail.com
+                    </a>
+                  </div>
+                  <div className="flex items-center text-gray-400">
+                    <MapPin className="w-4 h-4 mr-3 text-blue-400" />
+                    <span>Kigali, Rwanda</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            {/* Bottom Footer */}
+            <div className="pt-8 border-t border-slate-700">
+              <div className="flex flex-col md:flex-row justify-between items-center">
+                <p className="text-gray-400 text-sm mb-4 md:mb-0">
+                  © 2025 GAD ISHIMWE. All rights reserved.
+                </p>
+                <div className="flex space-x-6 text-sm">
+                  <button 
+                    onClick={() => navigate('/#contact')}
+                    className="text-gray-400 hover:text-blue-400 transition-colors duration-200"
+                  >
+                    Let's Work Together
+                  </button>
+                  <button 
+                    onClick={() => navigate('/')}
+                    className="text-gray-400 hover:text-blue-400 transition-colors duration-200"
+                  >
+                    Back to Portfolio
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </footer>
       </div>
     </div>
   );
