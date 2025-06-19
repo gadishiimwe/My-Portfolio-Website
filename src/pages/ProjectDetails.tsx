@@ -481,15 +481,6 @@ const ProjectDetails = () => {
                     <Github size={20} className="text-white mr-3" />
                     <span className="text-white">View Code</span>
                   </a>
-                  <a 
-                    href={project.demo}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="flex items-center p-3 bg-blue-600/20 rounded-lg hover:bg-blue-600/30 transition-colors"
-                  >
-                    <ExternalLink size={20} className="text-blue-400 mr-3" />
-                    <span className="text-blue-400">Live Demo</span>
-                  </a>
                 </div>
               </div>
 
