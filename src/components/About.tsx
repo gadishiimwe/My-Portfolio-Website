@@ -52,7 +52,7 @@ export const About = () => {
 
             <div className="space-y-6">
               <p className="text-lg text-gray-300 leading-relaxed">
-                I'm <strong className="text-blue-400">Gad Ishimwe</strong>, a full-stack developer from Rwanda with <strong className="text-blue-400">3 years of experience</strong> crafting digital solutions that matter. As the founder of <strong className="text-blue-400">EchoX</strong>, I focus on building responsive, user-friendly web applications that solve real problems and bring ideas to life.
+                I'm <strong className="text-blue-400">Gad Ishimwe</strong>, a full-stack developer from Rwanda with <strong className="text-blue-400">3 years of experience</strong> crafting digital solutions that matter. As the founder of <strong className="text-blue-400">ViraX</strong>, I focus on building responsive, user-friendly web applications that solve real problems and bring ideas to life.
               </p>
               <p className="text-lg text-gray-300 leading-relaxed">
                 Over the past 3 years, I've specialized in the MERN stack (MongoDB, Express, React, Node.js) and MySQL, with extensive experience in tools like WordPress, Firebase, Tailwind CSS, and emerging technologies like AI integration and blockchain. From backend APIs to front-end design, I enjoy building systems that are both powerful and easy to use.
