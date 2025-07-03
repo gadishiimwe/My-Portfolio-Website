@@ -1,5 +1,4 @@
-
-import { ArrowDown, Github, Linkedin } from "lucide-react";
+import { ArrowDown, Github, Linkedin, Mail } from "lucide-react";
 import { useEffect, useState } from "react";
 
 export const Hero = () => {
@@ -30,19 +29,27 @@ export const Hero = () => {
     document.body.removeChild(link);
   };
 
+  const requestResume = () => {
+    window.location.href = 
+      "mailto:gadyishimwe1@gmail.com?subject=Requesting%20Your%20Resume&body=Hi%20Gad,%20I%20would%20like%20to%20request%20your%20resume.%20Please%20send%20it%20when%20you%20have%20a%20moment.";
+  };
+
   return (
     <section id="home" className="min-h-screen flex items-center justify-center relative overflow-hidden pt-24">
       {/* Background Pattern */}
       <div className="absolute inset-0 opacity-10">
         <div className="absolute inset-0 bg-gradient-to-r from-blue-500/20 to-purple-500/20 animate-pulse"></div>
       </div>
-      
+
       <div className="z-10 px-4 max-w-7xl mx-auto">
         <div className="flex items-center justify-center animate-fade-in">
           {/* Content */}
           <div className="text-center">
             <h1 className="text-4xl md:text-6xl font-bold text-white mb-6">
-              Hi, I'm <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-purple-500">GAD ISHIMWE</span>
+              Hi, I'm{" "}
+              <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-purple-500">
+                GAD ISHIMWE
+              </span>
             </h1>
             <h2 className="text-xl md:text-2xl text-gray-300 mb-8 h-12">
               <span className="border-r-2 border-blue-400 pr-1">{displayText}</span>
@@ -71,11 +78,12 @@ export const Hero = () => {
               >
                 Explore My Work
               </button>
-              <button 
-                onClick={downloadResume}
-                className="px-8 py-4 border-2 border-blue-400 text-blue-400 font-semibold rounded-lg hover:bg-blue-400 hover:text-white transition-all duration-300 hover:scale-105"
+              <button
+                onClick={requestResume}
+                className="flex items-center justify-center px-8 py-4 border-2 border-blue-400 text-blue-400 font-semibold rounded-lg hover:bg-blue-400 hover:text-white transition-all duration-300 hover:scale-105"
               >
-                Download Resume
+                <Mail className="mr-2" size={20} />
+                Request Resume
               </button>
             </div>
           </div>
@@ -83,7 +91,7 @@ export const Hero = () => {
       </div>
 
       {/* Scroll Indicator */}
-      <button 
+      <button
         onClick={scrollToAbout}
         className="absolute bottom-8 left-1/2 transform -translate-x-1/2 animate-bounce"
       >
