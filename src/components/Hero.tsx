@@ -17,21 +17,25 @@ export const Hero = () => {
   }, [currentIndex, fullText]);
 
   const scrollToAbout = () => {
-    document.querySelector("#about")?.scrollIntoView({ behavior: "smooth" });
+    const aboutSection = document.querySelector("#about");
+    if (aboutSection) {
+      aboutSection.scrollIntoView({ behavior: "smooth" });
+    }
   };
 
   const downloadResume = () => {
-    const link = document.createElement('a');
-    link.href = '/RealOne_merged.pdf';
-    link.download = 'GAD_ISHIMWE_Resume.pdf';
+    const link = document.createElement("a");
+    link.href = "/RealOne_merged.pdf";
+    link.download = "GAD_ISHIMWE_Resume.pdf";
     document.body.appendChild(link);
     link.click();
     document.body.removeChild(link);
   };
 
   const requestResume = () => {
-    window.location.href =
+    const mailto = 
       "mailto:gadyishimwe1@gmail.com?subject=Requesting%20Your%20Resume&body=Hi%20Gad,%20I%20would%20like%20to%20request%20your%20resume.%20Please%20send%20it%20when%20you%20have%20a%20moment.";
+    window.location.href = mailto;
   };
 
   return (
@@ -108,6 +112,7 @@ export const Hero = () => {
       <button
         onClick={scrollToAbout}
         className="absolute bottom-8 left-1/2 transform -translate-x-1/2 animate-bounce"
+        aria-label="Scroll to About section"
       >
         <ArrowDown size={32} className="text-blue-400" />
       </button>
